@@ -222,58 +222,7 @@ services:
 
 ---
 
-## 📝 更新日誌
+## 📝 參考
 
-造訪發布頁面和更新日誌以了解最新動態：
-- [發布頁面 (Releases)](https://github.com/danny-avila/LibreChat/releases)
-- [更新日誌 (Changelog)](https://www.librechat.ai/changelog)
-
-**⚠️ 在更新前請務必查看[更新日誌](https://www.librechat.ai/changelog)以了解破壞性變更。**
-
----
-
-## ⭐ Star 歷史
-
-<p align="center">
-  <a href="https://star-history.com/#danny-avila/LibreChat&Date">
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=danny-avila/LibreChat&type=Date&theme=dark" onerror="this.src='https://api.star-history.com/svg?repos=danny-avila/LibreChat&type=Date'" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://trendshift.io/repositories/4685" target="_blank" style="padding: 10px;">
-    <img src="https://trendshift.io/api/badge/repositories/4685" alt="danny-avila%2FLibreChat | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
-  </a>
-  <a href="https://runacap.com/ross-index/q1-24/" target="_blank" rel="noopener" style="margin-left: 20px;">
-    <img style="width: 260px; height: 56px" src="https://runacap.com/wp-content/uploads/2024/04/ROSS_badge_white_Q1_2024.svg" alt="ROSS Index - 2024年第一季度成長最快的開源新創公司 | Runa Capital" width="260" height="56"/>
-  </a>
-</p>
-
----
-
-## ✨ 貢獻
-
-歡迎任何形式的貢獻、建議、錯誤報告和修正！
-
-對於新功能、元件或擴充，請在送出 PR 前開啟 issue 進行討論。
-
-如果您想幫助我們將 LibreChat 翻譯成您的母語，我們非常歡迎！改善翻譯不僅能讓全球使用者更輕鬆地使用 LibreChat，還能提升整體使用者體驗。請查看我們的[翻譯指南](https://www.librechat.ai/docs/translation)。
-
----
-
-## 💖 感謝所有貢獻者
-
-<a href="https://github.com/danny-avila/LibreChat/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=danny-avila/LibreChat" />
-</a>
-
----
-
-## 🎉 特別鳴謝
-
-感謝 [Locize](https://locize.com) 提供的翻譯管理工具，支援 LibreChat 的多語言功能。
-
-<p align="center">
-  <a href="https://locize.com" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/user-attachments/assets/d6b70894-6064-475e-bb65-92a9e23e0077" alt="Locize Logo" height="50">
-  </a>
-</p>
+[Docker](https://www.librechat.ai/zh/docs/local/docker)  
+[librechat_yaml](https://www.librechat.ai/zh/docs/configuration/librechat_yaml)

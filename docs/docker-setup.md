@@ -1,8 +1,12 @@
 # 本機 Docker 安裝教學
 
-本文件記錄「本專案（`d:\4-chat\LibreChat`）」在本機以 Docker 啟動時的實際設定與調整原因，方便日後重建環境或排查問題時參考。官方完整文件請見外部網站 [docs.librechat.ai](https://docs.librechat.ai)，這裡只整理本機的部分。
+## 概觀
 
-左側面板顯示項目的客製化設定另見 [librechat-yaml.md](./librechat-yaml.md)。
+本文件說明如何以 Docker Compose 在本機啟動 LibreChat，以及當同一台機器上已經有另一套 LibreChat 安裝時，如何調整 port 與容器名稱避免衝突。官方完整文件請見外部網站 [docs.librechat.ai](https://docs.librechat.ai)，這裡只整理本機客製化的部分。
+
+相關文件：
+- 左側面板顯示項目的客製化設定：[sidebar-panel.md](./sidebar-panel.md)
+- 模型端點（Azure OpenAI 等）設定：[model-endpoints.md](./model-endpoints.md)
 
 ## 目前環境
 
@@ -13,9 +17,9 @@
 
 ---
 
-## 1. 為什麼要改 Port（避免與其他 LibreChat 安裝衝突）
+## 1. 避免與其他 LibreChat 安裝衝突
 
-本機同時存在另一套官方安裝（不同專案目錄），預設都使用相同的 port（`3080`、`3000`）與容器名稱，直接啟動會撞名/撞 port 而失敗。
+`docker-compose.yml` 的預設 port（`3080`、`3000`）與 `container_name` 都是固定值。如果同一台機器上已經跑了另一套 LibreChat 安裝（不論是不同專案目錄或不同分支），直接啟動會因為 port 或容器名稱重複而失敗。
 
 ### `.env` 調整
 

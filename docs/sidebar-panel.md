@@ -1,6 +1,13 @@
 # `librechat.yaml` 左側面板客製化教學
 
-本文件記錄如何透過 `librechat.yaml` 調整 LibreChat 左側面板顯示的項目。Docker 安裝與 port／容器名稱衝突處理請見 [docker-setup.md](./docker-setup.md)。
+## 概觀
+
+本文件說明如何透過 `librechat.yaml` 的 `interface` 區塊，調整 LibreChat 左側面板顯示的項目。這跟模型端點設定是**不同的設定區塊**（僅 Agents 端點例外，見 [model-endpoints.md 的已知限制](./model-endpoints.md#已知限制agents-端點與側欄設定衝突)）：
+
+- Docker 安裝與 port／容器名稱衝突處理：[docker-setup.md](./docker-setup.md)
+- 模型端點（Azure OpenAI 等）設定：[model-endpoints.md](./model-endpoints.md)
+
+官方文件：[librechat.ai/docs/configuration/librechat_yaml/interface](https://www.librechat.ai/docs/configuration/librechat_yaml)
 
 ## 需求
 
@@ -89,3 +96,7 @@ Updating 'USER' role permission 'MCP_SERVERS' 'USE' from true to: false
 | `interface.mcpServers` | MCP 伺服器管理面板 |
 | `interface.fileSearch` | 聊天輸入框的「File Search」工具開關，**不是**附加檔案面板 |
 | `interface.temporaryChat` / `interface.webSearch` / `interface.runCode` | 聊天輸入框上方的工具切換，非側欄面板 |
+
+## 與模型端點設定的關聯
+
+側欄裡的「Agent/Assistant 建立器」圖示（`interface.agents.use`）跟模型選單裡的「Agents」端點是同一個開關控制的，兩者無法分開設定，詳見 [model-endpoints.md 的已知限制](./model-endpoints.md#已知限制agents-端點與側欄設定衝突)。
